@@ -1,0 +1,99 @@
+.navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+     position: fixed; 
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Logo Styling */
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Default span color */
+.logo h1 span {
+    color: orange;
+}
+
+/* Hover effect */
+.logo h1:hover {
+    color: orange; /* Non-span text turns orange */
+}
+
+.logo h1:hover span {
+    color: yellow; /* Span text turns yellow */
+}
+
+/* Navigation Menu */
+.navmenu {
+    display: flex;
+    gap: 12px; /* Spacing between menu items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navmenu li {
+    display: inline-block;
+}
+
+.navmenu li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.navmenu li a:hover {
+    color: #007bff; /* Change to desired hover color */
+}
+
+/* Hamburger Icon */
+.hyfens {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+@media screen and (max-width: 940px) {
+    .hyfens {
+        display: block; /* Show hamburger menu */
+    }
+
+    .navmenu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: -100%; /* Hide menu initially */
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%);
+        z-index: -3;
+    }
+   .navmenu li{
+    padding: 10px 10px;
+   }
+   .navmenu li a{ font-size: larger;
+font-weight: 400;}
+    /* Show menu when active */
+    .navmenu.active {
+        transform: translateX(0);
+        left: 0;
+    }
+}
+
