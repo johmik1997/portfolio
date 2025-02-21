@@ -17,7 +17,7 @@ function Aboutimage(){
     <img src={about1} className="img" alt="about me"/>
     </div>
     <div className="image2">
-        <img src={about2} className="img"/>
+        <img src={about2} alt="about image" className="img"/>
     </div>
     </div>
 </div>

@@ -10,7 +10,6 @@ class Projectmainpage extends Component{
          {this.props.heading}
             </h1>
 <p>{this.props.text}</p>
-<img/>
         </div>
         </div>
     );}

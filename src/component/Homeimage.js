@@ -7,7 +7,7 @@ function Homeimage() {
     return (
         <div className="main">
             <div className="container">
-                <img className="myphoto" src={myphoto} alt="My Photo" />
+                <img className="myphoto" src={myphoto} alt='My Photo' />
             </div>
             <div className="content">
                 <h1>Hi, I'm <span>Yohannes Getaneh</span></h1>

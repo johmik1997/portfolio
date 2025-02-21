@@ -2,6 +2,26 @@
   text-align: center;  
   padding: 10rem 0 2rem 0;
 } 
+/* Container to hold sliding items */
+.carousel {
+    width: 100%;
+    overflow: hidden; /* Hide overflowing cards */
+    position: relative;
+}
+
+/* Inner wrapper that moves left */
+.carousel-inner {
+    display: flex;
+    width: calc(100%); /* Adjust based on number of slides */
+}
+
+/* Each project card */
+.carousel-item {
+    flex: 1 0 33.33%; /* Show 3 cards at a time */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 .project-container{
 max-width:1140px;
 margin: auto;

@@ -2,7 +2,7 @@ import Home from "./route/Home";
 import Project from "./route/Project";
 import About from "./route/About";
 import Contact from "./route/Contact";
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">

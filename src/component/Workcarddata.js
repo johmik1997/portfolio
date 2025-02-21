@@ -18,6 +18,12 @@ const WorkCardData = [
         title: "Bill Splitter",
         text: "The Bill Splitter app helps users easily divide expenses among friends. Enter the total bill, specify friends, and get an even or customized split.",
         view: "https://github.com/johmik1997/johmik1997"
+    },
+    {
+        image: image2,
+        title: "Bill Splitter",
+        text: "The Bill Splitter app helps users easily divide expenses among friends. Enter the total bill, specify friends, and get an even or customized split.",
+        view: "https://github.com/johmik1997/johmik1997"
     }
 
 ];
